@@ -11,7 +11,7 @@ source:
   sha256: a3a05a8d6007fe37171ed34442766b5cc7a0ca604a40f3100e26767ace61173c
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -27,8 +27,8 @@ requirements:
     - libgomp  # [linux]
   run:
     - llvm-openmp  # [osx]
-    - pillow
-    - psutil
+    - pillow >=9.1
+    - psutil >=5.8
     - python
     - numpy =1.21
     - {{ pin_compatible('numpy') }}
