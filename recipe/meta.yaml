@@ -1,5 +1,5 @@
 {% set name = "svmbir" %}
-{% set version = "0.2.10" %}
+{% set version = "0.3.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f73eb12d71aa35f2439fc7b3153a7c59366700951f1c665d03c8bfc6d21391bd
+  sha256: 840bbd99de28483e4d7b3642b6fc5552fd0e3954a6db5288b82840a75105d8ce
 
 build:
   number: 0
