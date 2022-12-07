@@ -12,7 +12,7 @@ source:
 
 build:
   number: 0
-  skip: true  # [win or py<38]
+  skip: true  # [win or py<37]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -22,7 +22,7 @@ requirements:
     - cython
     - pip
     - python
-    - numpy =1.22
+    - numpy =1.21.6
     - llvm-openmp  # [osx]
     - libgomp  # [linux]
   run:
@@ -30,7 +30,7 @@ requirements:
     - pillow >=9.1
     - psutil >=5.8
     - python
-    - numpy =1.22
+    - numpy >=1.21.4
     - {{ pin_compatible('numpy') }}
 
 test:
