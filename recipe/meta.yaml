@@ -1,5 +1,5 @@
 {% set name = "svmbir" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 
 package:
@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 840bbd99de28483e4d7b3642b6fc5552fd0e3954a6db5288b82840a75105d8ce
+  sha256: a8366a3f03da65a386aa1e1fcfbf726fd0ac2996cf5cee9036ae4352fb2cb026
 
 build:
   number: 0
-  skip: true  # [win or py<38]
+  skip: true  # [win or py<37]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -22,7 +22,7 @@ requirements:
     - cython
     - pip
     - python
-    - numpy =1.22
+    - numpy =1.21.6
     - llvm-openmp  # [osx]
     - libgomp  # [linux]
   run:
@@ -30,7 +30,7 @@ requirements:
     - pillow >=9.1
     - psutil >=5.8
     - python
-    - numpy =1.22
+    - numpy >=1.21.4
     - {{ pin_compatible('numpy') }}
 
 test:
@@ -47,7 +47,7 @@ test:
 
 about:
   home: https://github.com/cabouman/svmbir
-  summary: Python code for fast parallel-beam MBIR (Model Based Iterative Reconstruction)
+  summary: Python code for fast MBIR (Model Based Iterative Reconstruction)
   license: BSD-3-Clause
   license_file: LICENSE
 
