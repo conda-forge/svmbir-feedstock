@@ -7,7 +7,7 @@ Package license: BSD-3-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/svmbir-feedstock/blob/main/LICENSE.txt)
 
-Summary: Python code for fast parallel-beam MBIR (Model Based Iterative Reconstruction)
+Summary: Python code for fast MBIR (Model Based Iterative Reconstruction)
 
 Current build status
 ====================

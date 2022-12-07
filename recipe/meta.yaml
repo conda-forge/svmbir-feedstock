@@ -47,7 +47,7 @@ test:
 
 about:
   home: https://github.com/cabouman/svmbir
-  summary: Python code for fast parallel-beam MBIR (Model Based Iterative Reconstruction)
+  summary: Python code for fast MBIR (Model Based Iterative Reconstruction)
   license: BSD-3-Clause
   license_file: LICENSE
 
