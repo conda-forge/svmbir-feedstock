@@ -18,6 +18,10 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - python
+    - cross-python_{{ target_platform }}
+    - cython
+    - numpy =1.26.3
   host:
     - cython
     - pip
