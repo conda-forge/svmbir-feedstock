@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 64f6d70f939396157a49ecdbd8cd728496d7d5f0cd0894915c7c0ce8cf866357
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win or py<39 or py>312]
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -23,7 +23,8 @@ requirements:
     - cython
     - pip
     - python
-    - numpy =1.26.3
+    - setuptools
+    - numpy >=1.26.3
     - llvm-openmp  # [osx]
     - libgomp  # [linux]
   run:
