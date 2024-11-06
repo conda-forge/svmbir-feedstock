@@ -23,7 +23,8 @@ requirements:
     - cython
     - pip
     - python
-    - numpy =1.26.3
+    - setuptools
+    - numpy >=1.26.3
     - llvm-openmp  # [osx]
     - libgomp  # [linux]
   run:
